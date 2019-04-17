@@ -1,0 +1,16 @@
+oracle_user:                     "oracle"
+root_user:                       "root"
+oracle_install_group:            "oinstall"
+stage_dir:                       "/u01/stage"
+root_directory:                  "/u01"
+scripts_directory:               "{{ root_directory }}/app/scripts"
+base_directory:                  "{{ root_directory }}/app/oracle"
+oracle_home:                     "{{ base_directory }}/product/19.2.0/db100"
+cdb_name:                        "eaymp"
+pdb_name:                        "kachu"
+pdbadmpassword:                  "Oracle123"
+prihost:                          ora-x1
+portnum:                          1521
+tns_path:                        "{{ oracle_home }}/network/admin"
+tns_file:                        "{{ tns_path }}/tnsnames.ora"
+
